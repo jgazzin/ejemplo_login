@@ -1,0 +1,15 @@
+{
+  "name": "05_ejemplo_login",
+  "version": "1.0.0",
+  "description": "ejemplo de login con BD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jgdisenio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.10.1"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*reset*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  body{
+      margin: 0;
+      padding: 0;
+      color: inherit;
+      font-size: 1.6rem;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+    </style>
+    <link rel="stylesheet" href="./css/log-in.css">
+</head>
+<body>
+    <div class="container">
+        <form class="registro" novalidate>
+            <fieldset>
+                <legend>Iniciar Sesión</legend>
+                <p>¿No tenés cuenta? <a href="registro.html">Registrarse</a></p>
+            </fieldset>
+    
+            <fieldset>
+                <div class="input-item">
+                    <label for="user">e-mail</label>
+                    <input type="text" id="user">
+                </div>
+                <div class="input-item">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    <p><a href="recuperarPass.html">Olvidé mi contraseña</a></p>
+                </div>              
+            </fieldset>
+            <fieldset class="datos">
+                <input type="checkbox" required>
+                <label>Recortar mis datos</label>
+            </fieldset>
+            <fieldset class="button">
+                <button class="btn submit">Ingresar</button>
+                <p>o iniciar con</p>
+                <button class="btn google" disabled>Google</button>
+            </fieldset>
+
+            <script src="./js/validator.js"></script>
+        </form>
+    </div>
+
+</body>
+</html>
